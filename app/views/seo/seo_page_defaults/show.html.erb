@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Page title:</strong>
+  <%= @seo_page_default.page_title %>
+</p>
+
+<p>
+  <strong>Meta keywrods:</strong>
+  <%= @seo_page_default.meta_keywords %>
+</p>
+
+<p>
+  <strong>Meta description:</strong>
+  <%= @seo_page_default.meta_description %>
+</p>
+
+<%= link_to 'Edit', edit_seo_page_default_path(@seo_page_default) %> |
+<%= link_to 'Back', seo_page_defaults_path %>

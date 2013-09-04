@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Page title:</strong>
+  <%= @seo_page.page_title %>
+</p>
+
+<p>
+  <strong>Meta keywrods:</strong>
+  <%= @seo_page.meta_keywords %>
+</p>
+
+<p>
+  <strong>Meta description:</strong>
+  <%= @seo_page.meta_description %>
+</p>
+
+<p>
+  <strong>Url identifier:</strong>
+  <%= @seo_page.url_identifier %>
+</p>
+
+<%= link_to 'Edit', edit_seo_page_path(@seo_page) %> |
+<%= link_to 'Back', seo_pages_path %>
