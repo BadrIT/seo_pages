@@ -15,6 +15,7 @@ After installation
 
 ```ruby
 rake seo:install:migrations
+rake db:migrate
 ```
 
 You will need to provide a before_action require_admin in an initializer
