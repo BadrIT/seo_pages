@@ -2,13 +2,14 @@ module Seo
   module ApplicationHelper
 
     def seo_data
-      seo_default = Seo::SeoPageDefault.first
-      seo = Seo::SeoPage.where(url_identifier: request.fullpath).first
-      data = {}
-      [:page_title, :meta_keywords, :meta_description].each do |m|
-        data[m] = seo && !seo.send(m).blank? ? seo.send(m) : seo_default.send(m)
+      @seo_default ||= Seo::SeoPageDefault.first
+      unless @seo = Seo::SeoPage.where(url_identifier: request.fullpath).first
+        seo.page_title ||= @seo_default.page_title
+        seo.meta_keywords ||= @seo_default.meta_keywords
+        seo.meta_description ||= @seo_default.meta_description
       end
-      data
+
+      @seo
     end
 
   end

@@ -2,9 +2,9 @@
 <html>
 <head>
   
-  <title><%= seo_data[:page_title] %></title>
-  <meta name="description" content="<%= seo_data[:meta_description] %>" />
-  <meta name="keywords" content="<%= seo_data[:meta_keywords] %>" />
+  <title><%= seo_data.page_title %></title>
+  <meta name="description" content="<%= seo_data.meta_description %>" />
+  <meta name="keywords" content="<%= seo_data.meta_keywords %>" />
 
   <%= stylesheet_link_tag    "seo/application", media: "all" %>
   <%= javascript_include_tag "seo/application" %>

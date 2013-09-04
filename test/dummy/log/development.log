@@ -7224,3 +7224,130 @@ Started GET "/assets/seo/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-04 11:37
 
 
 Started GET "/assets/seo/application.js?body=1" for 127.0.0.1 at 2013-09-04 11:37:37 +0200
+
+
+Started GET "/seo_pages/new" for 127.0.0.1 at 2013-09-04 11:54:02 +0200
+Processing by Seo::SeoPagesController#new as HTML
+  Rendered /home/hassan/projects/rails/badrit/company_site/engines/seo_pages/app/views/seo/seo_pages/_form.html.erb (63.1ms)
+  Rendered /home/hassan/projects/rails/badrit/company_site/engines/seo_pages/app/views/seo/seo_pages/new.html.erb within layouts/seo/application (67.9ms)
+  [1m[36mSeo::SeoPageDefault Load (0.2ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeo::SeoPage Load (0.3ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages/new' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages/new' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages/new' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 187ms (Views: 181.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/seo/application.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:02 +0200
+
+
+Started GET "/assets/seo/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:02 +0200
+
+
+Started GET "/assets/seo/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:02 +0200
+
+
+Started GET "/assets/seo/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:02 +0200
+
+
+Started GET "/assets/seo/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:02 +0200
+
+
+Started GET "/assets/seo/application.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:02 +0200
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-04 11:54:07 +0200
+Processing by Seo::SeoPagesController#index as HTML
+  [1m[36mSeo::SeoPageDefault Load (0.4ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeo::SeoPage Load (0.3ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages"
+  Rendered /home/hassan/projects/rails/badrit/company_site/engines/seo_pages/app/views/seo/seo_pages/index.html.erb within layouts/seo/application (4.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeo::SeoPage Load (0.2ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/seo/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:07 +0200
+
+
+Started GET "/assets/seo/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:07 +0200
+
+
+Started GET "/assets/seo/application.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:07 +0200
+
+
+Started GET "/assets/seo/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:07 +0200
+
+
+Started GET "/assets/seo/application.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:07 +0200
+
+
+Started GET "/assets/seo/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:07 +0200
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-04 11:54:11 +0200
+Processing by Seo::SeoPagesController#index as HTML
+  [1m[36mSeo::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeo::SeoPage Load (0.3ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages"
+  Rendered /home/hassan/projects/rails/badrit/company_site/engines/seo_pages/app/views/seo/seo_pages/index.html.erb within layouts/seo/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeo::SeoPage Load (0.2ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/seo_pages' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/seo/application.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:11 +0200
+
+
+Started GET "/assets/seo/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:11 +0200
+
+
+Started GET "/assets/seo/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:11 +0200
+
+
+Started GET "/assets/seo/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:11 +0200
+
+
+Started GET "/assets/seo/application.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:11 +0200
+
+
+Started GET "/assets/seo/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:11 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-04 11:54:14 +0200
+Processing by Seo::SeoPagesController#index as HTML
+  [1m[36mSeo::SeoPageDefault Load (0.2ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeo::SeoPage Load (0.3ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages"
+  Rendered /home/hassan/projects/rails/badrit/company_site/engines/seo_pages/app/views/seo/seo_pages/index.html.erb within layouts/seo/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeo::SeoPage Load (0.3ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_seo_page_defaults".* FROM "seo_seo_page_defaults" ORDER BY "seo_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_seo_pages".* FROM "seo_seo_pages" WHERE "seo_seo_pages"."url_identifier" = '/' ORDER BY "seo_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/seo/application.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:14 +0200
+
+
+Started GET "/assets/seo/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:14 +0200
+
+
+Started GET "/assets/seo/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:14 +0200
+
+
+Started GET "/assets/seo/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-04 11:54:14 +0200
+
+
+Started GET "/assets/seo/application.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:14 +0200
+
+
+Started GET "/assets/seo/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-04 11:54:14 +0200
