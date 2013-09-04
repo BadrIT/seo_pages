@@ -14,7 +14,7 @@ run bundle install
 After installation
 
 ```ruby
-rake seo:install:migration
+rake seo:install:migrations
 ```
 
 You will need to provide a before_action require_admin in an initializer
