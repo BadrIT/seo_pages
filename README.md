@@ -1,6 +1,7 @@
-= Seo Pages
+## Seo Pages
 
-## Introduction 
+Add Seo to your pages
+
 
 ### Installation
 
