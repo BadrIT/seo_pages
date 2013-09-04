@@ -26,7 +26,7 @@ create a file seo_initializer.rb in initializer directory
 module Seo
   class ApplicationController < ActionController::Base
 
-    def require_admin
+    def require_seo_admin
         redirect_to(root_path) unless current_user.admin?
     end
     

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    seo (0.0.1)
+    seo (1.0.0)
       rails (~> 4.0.0)
 
 GEM
