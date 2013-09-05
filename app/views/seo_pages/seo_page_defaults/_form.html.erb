@@ -1,0 +1,29 @@
+<%= form_for(@seo_page_default) do |f| %>
+  <% if @seo_page_default.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@seo_page_default.errors.count, "error") %> prohibited this seo_page_default from being saved:</h2>
+
+      <ul>
+      <% @seo_page_default.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :page_title %><br>
+    <%= f.text_area :page_title, rows: 5, cols: 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :meta_keywords %><br>
+    <%= f.text_area :meta_keywords, rows: 5, cols: 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :meta_description %><br>
+    <%= f.text_area :meta_description, rows: 5, cols: 40 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

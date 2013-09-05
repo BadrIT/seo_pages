@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Seo::Engine => "/"
+  mount SeoPages::Engine => "/seo_pages"
 end

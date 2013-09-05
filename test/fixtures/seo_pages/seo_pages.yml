@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url_identifier: MyString
+  page_title: MyString
+  meta_keywords: MyString
+  meta_description: MyString
+
+two:
+  url_identifier: MyString
+  page_title: MyString
+  meta_keywords: MyString
+  meta_description: MyString

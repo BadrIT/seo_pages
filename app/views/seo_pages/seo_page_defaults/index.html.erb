@@ -1,0 +1,31 @@
+<h1>Listing seo_page_defaults</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Page title</th>
+      <th>Meta keywords</th>
+      <th>Meta description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seo_page_defaults.each do |seo_page_default| %>
+      <tr>
+        <td><%= seo_page_default.page_title %></td>
+        <td><%= seo_page_default.meta_keywords %></td>
+        <td><%= seo_page_default.meta_description %></td>
+        <td><%= link_to 'Show', seo_page_default %></td>
+        <td><%= link_to 'Edit', edit_seo_page_default_path(seo_page_default) %></td>
+        <td><%= link_to 'Destroy', seo_page_default, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Seo page default', new_seo_page_default_path %>

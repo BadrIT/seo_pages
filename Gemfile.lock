@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    seo (1.0.0)
+    seo_pages (0.0.1)
       rails (~> 4.0.0)
 
 GEM
@@ -84,5 +84,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  seo!
+  seo_pages!
   sqlite3
