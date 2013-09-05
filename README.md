@@ -23,7 +23,7 @@ You will need to provide a before_action require_admin in an initializer
 create a file seo_initializer.rb in initializer directory
 
 ```ruby
-module Seo
+module SeoPages
   class ApplicationController < ActionController::Base
 
     def require_seo_admin
