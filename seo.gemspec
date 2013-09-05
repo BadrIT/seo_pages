@@ -7,16 +7,16 @@ require "seo/version"
 Gem::Specification.new do |s|
   s.name        = "seo"
   s.version     = Seo::VERSION
-  s.authors     = ["bazaretas", "mahmoud_khaled"]
+  s.authors     = ["BadrIT", "mahmoud_khaled", "Hassan Zaki"]
   s.email       = ["bazaretas@gmail.com"]
-  s.homepage    = "https://github.com/thepythonic/seo_pages"
-  s.summary     = "Add Seo to your pages"
-  s.description = "Add Seo to your pages"
+  s.homepage    = "https://github.com/BadrIT/seo_pages"
+  s.summary     = "Eaasily add Seo to your pages"
+  s.description = "Seo Page make it easy to manage you SEO content for all pages in your website"
+  s.license     = 'MIT'
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.0"
 
-  #s.add_development_dependency "sqlite3"
 end
