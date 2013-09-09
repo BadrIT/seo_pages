@@ -12,7 +12,11 @@ Update your Gemfile
 gem 'seo_pages'  
 ```
 
-run bundle install
+Then run bundle install 
+
+```ruby
+bundle install
+```
 
 After installation
 
