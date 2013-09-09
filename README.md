@@ -50,18 +50,18 @@ mount SeoPages::Engine => "/seo"
 In you browser visit the url "/seo", you can edit the Default values for title, meta description and meta keywords.
 You can add a new SEO page, by providing the url identifier and the related title, meta description and meta keywords.
 
-You can easily override the SEO page functionality in application.html.haml.
-
 ```ruby
-%head
-    %title= content_for?(:title) ? yield(:title) : seo_data.page_title
-    %meta{:content => content_for?(:meta_description) ? yield(:description) : "#{seo_data.meta_description}", :name => "description"}
-    %meta{:content => content_for?(:meta_keywords) ? yield(:description) : "#{seo_data.meta_keywords}", :name => "keywords"}
+%html
+  %head
+    = seo_page
 ``` 
 
-Then in the view you want to add custom SEO 
+You can easily override the SEO page functionality in application.html.haml.
+In the view you want to add custom SEO.
 ```ruby
-- content_for :title do
-  My Custom Title
+- seo_page_title("My Cool Engine")
+- seo_page_meta_description("My cool description")
+- seo_page_meta_keywrods("keywords keywords keywords keywords keywords keywords keywords keywords")
+
 ```
 
