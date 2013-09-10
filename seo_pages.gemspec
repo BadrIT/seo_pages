@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["BadrIT", "mahmoud_khaled", "Hassan Zaki"]
   s.email       = ["bazaretas@gmail.com"]
   s.homepage    = "https://github.com/BadrIT/seo_pages"
-  s.summary     = "Eaasily add Seo to your pages"
-  s.description = "Seo Page make it easy to manage you SEO content for all pages in your website"
+  s.summary     = "Easily add SEO to your pages"
+  s.description = "Provides an easy way to manage your pages title, meta description and meta keywords"
   s.license     = 'MIT'
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
