@@ -68,7 +68,7 @@ In the view you want to add custom SEO.
 ```ruby
 - seo_page_title("My Cool Engine")
 - seo_page_meta_description("My cool description")
-- seo_page_meta_keywrods("keywords keywords keywords keywords keywords keywords keywords keywords")
+- seo_page_meta_keywrods("keywords keywords keywords keywords")
 
 ```
 
