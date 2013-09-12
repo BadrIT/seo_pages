@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["bazaretas@gmail.com"]
   s.homepage    = "https://github.com/BadrIT/seo_pages"
   s.summary     = "Easily add SEO to your pages"
-  s.description = "Provides an easy way to manage your pages title, meta description and meta keywords"
+  s.description = "Web interface to manage your pages title, meta description and meta keywords"
   s.license     = 'MIT'
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
