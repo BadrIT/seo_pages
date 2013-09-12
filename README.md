@@ -48,8 +48,15 @@ mount SeoPages::Engine => "/seo"
 ```
 
 In you browser visit the url "/seo", you can edit the Default values for title, meta description and meta keywords.
+
+![Alt text](https://raw.github.com/BadrIT/seo_pages/gh-pages/images/seo_list.png "List SEO Pages")
+![Alt text](https://raw.github.com/BadrIT/seo_pages/gh-pages/images/seo_edit_default.png "Edit Default SEO")
+
 You can add a new SEO page, by providing the url identifier and the related title, meta description and meta keywords.
 
+![Alt text](https://raw.github.com/BadrIT/seo_pages/gh-pages/images/seo_add_new.png "Add New SEO")
+
+In application layout, add the following code.
 ```ruby
 %html
   %head
