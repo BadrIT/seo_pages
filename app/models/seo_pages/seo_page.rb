@@ -20,7 +20,7 @@ module SeoPages
 
     def self.regex_match url
       regex.to_a.find do |seo|
-        (get_regex(seo.url_identifier) =~ url) != nil
+        not (get_regex(seo.url_identifier) =~ url).nil?
       end
     end
 
