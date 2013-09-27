@@ -15,7 +15,5 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
-*.rub-*
-*/tmp/*
-*/log/*
-*/db/*.sqlite3
+**.rub-*
+*.sqlite3

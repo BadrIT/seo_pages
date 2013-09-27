@@ -1438,3 +1438,523 @@ Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-2
   [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
   [1m[35mSeoPages::SeoPage Load (0.5ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
   [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:43:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-27 20:43:27 +0200
+Processing by SeoPages::SeoPagesController#index as HTML
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages"[0m
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/index.html.erb within layouts/seo_pages/application (27.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+Completed 200 OK in 157ms (Views: 97.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:27 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:27 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:27 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:27 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:27 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:27 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 20:43:30 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.5ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (17.8ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (22.1ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.3ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:30 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:30 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:30 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:30 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:30 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:30 +0200
+
+
+Started PATCH "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 20:43:42 +0200
+Processing by SeoPages::SeoPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOKhi5KsKf9hA5VZDa3IeKrAp9Z8zCXOhrdXTsCf4C0=", "seo_page"=>{"url_identifier"=>"^pr", "is_regex"=>"1", "page_title"=>"hello world", "meta_keywords"=>"hello world keywords", "meta_description"=>"hello world description"}, "commit"=>"Update Seo page", "id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSeoPages::SeoPage Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "seo_pages_seo_pages" WHERE ("seo_pages_seo_pages"."url_identifier" = '^pr' AND "seo_pages_seo_pages"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  UPDATE "seo_pages_seo_pages" SET "url_identifier" = ?, "updated_at" = ? WHERE "seo_pages_seo_pages"."id" = 1  [["url_identifier", "^pr"], ["updated_at", Fri, 27 Sep 2013 18:43:42 UTC +00:00]]
+  [1m[36m (226.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/seo_pages/seo_pages/1
+Completed 302 Found in 245ms (ActiveRecord: 228.5ms)
+
+
+Started GET "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 20:43:43 +0200
+Processing by SeoPages::SeoPagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/show.html.erb within layouts/seo_pages/application (1.8ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:43 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:43 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:43 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:43 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:43 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:43 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 20:43:56 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (3.9ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.7ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 49ms (Views: 43.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:56 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:56 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:56 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:56 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:56 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 20:44:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (3.0ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 166ms (Views: 160.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:59 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:59 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:59 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:59 +0200
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 20:46:23 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (18.7ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (23.0ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 92ms (Views: 88.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:23 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:23 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:23 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:23 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:23 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:23 +0200
+
+
+Started PATCH "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+Processing by SeoPages::SeoPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOKhi5KsKf9hA5VZDa3IeKrAp9Z8zCXOhrdXTsCf4C0=", "seo_page"=>{"url_identifier"=>"^\\/pr", "is_regex"=>"1", "page_title"=>"hello world", "meta_keywords"=>"hello world keywords", "meta_description"=>"hello world description"}, "commit"=>"Update Seo page", "id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSeoPages::SeoPage Exists (0.2ms)[0m  SELECT 1 AS one FROM "seo_pages_seo_pages" WHERE ("seo_pages_seo_pages"."url_identifier" = '^\/pr' AND "seo_pages_seo_pages"."id" != 1) LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mUPDATE "seo_pages_seo_pages" SET "url_identifier" = ?, "updated_at" = ? WHERE "seo_pages_seo_pages"."id" = 1[0m  [["url_identifier", "^\\/pr"], ["updated_at", Fri, 27 Sep 2013 18:46:33 UTC +00:00]]
+  [1m[35m (190.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/seo_pages/seo_pages/1
+Completed 302 Found in 207ms (ActiveRecord: 191.8ms)
+
+
+Started GET "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+Processing by SeoPages::SeoPagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/show.html.erb within layouts/seo_pages/application (1.8ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:33 +0200
+  [1m[36mSeoPages::SeoPage Load (0.7ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 20:46:43 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.3ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:44 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:44 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:44 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:44 +0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2013-09-27 20:46:57 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (16.5ms)
+  Rendered products/new.html.erb within layouts/application (18.1ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:57 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:57 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:57 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:57 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 20:46:59 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.4ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:59 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:46:59 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:59 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:46:59 +0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2013-09-27 20:47:00 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (4.3ms)
+  Rendered products/new.html.erb within layouts/application (5.3ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.4ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:00 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:00 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:00 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:00 +0200
+
+
+Started POST "/products" for 127.0.0.1 at 2013-09-27 20:47:03 +0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOKhi5KsKf9hA5VZDa3IeKrAp9Z8zCXOhrdXTsCf4C0=", "product"=>{"name"=>"hello"}, "commit"=>"Create Product"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 27 Sep 2013 18:47:03 UTC +00:00], ["name", "hello"], ["updated_at", Fri, 27 Sep 2013 18:47:03 UTC +00:00]]
+  [1m[36m (207.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/products/1
+Completed 302 Found in 217ms (ActiveRecord: 208.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2013-09-27 20:47:03 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:03 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:03 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:03 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:03 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 20:47:05 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (2.8ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:05 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:05 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:05 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:05 +0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2013-09-27 20:47:07 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/new.html.erb within layouts/application (4.7ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:07 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:07 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:07 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:07 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 20:47:08 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.3ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:08 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:08 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 20:47:08 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:08 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 20:47:08 +0200
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.5ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/produc' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.4ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/sdfproduc' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/sdfproduc' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.4ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/produc' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.4ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/produc' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
