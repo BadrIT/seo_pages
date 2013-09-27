@@ -1,0 +1,1440 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:09:06 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile.):
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:58:in `rescue in resolve_hash_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:55:in `resolve_hash_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:46:in `resolve_string_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:30:in `spec'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:39:in `establish_connection'
+  activerecord (4.0.0) lib/active_record/railtie.rb:175:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.0.0) lib/active_record/base.rb:322:in `<module:ActiveRecord>'
+  activerecord (4.0.0) lib/active_record/base.rb:22:in `<top (required)>'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:50:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__216160111__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:09:35 +0200
+
+SQLite3::CantOpenException (unable to open database file):
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `sqlite3_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__715793666__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:09:38 +0200
+
+SQLite3::CantOpenException (unable to open database file):
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `sqlite3_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__715793666__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:09:39 +0200
+
+SQLite3::CantOpenException (unable to open database file):
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `sqlite3_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__715793666__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+  [1m[36m (141.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (144.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:12:53 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seo" for 127.0.0.1 at 2013-09-27 19:12:58 +0200
+
+ActionController::RoutingError (No route matches [GET] "/seo"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (37.6ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (103.4ms)
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-27 19:13:05 +0200
+Processing by SeoPages::SeoPagesController#index as HTML
+Completed 500 Internal Server Error in 40ms
+
+NameError (undefined local variable or method `require_seo_admin' for #<SeoPages::SeoPagesController:0xb5f428f0>):
+  activesupport (4.0.0) lib/active_support/callbacks.rb:377:in `_run__665337677__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__90665218__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (40.8ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.6ms)
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-27 19:13:58 +0200
+Processing by SeoPages::SeoPagesController#index as HTML
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+SQLite3::SQLException: no such table: seo_pages_seo_page_defaults: SELECT  "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults"   ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 6ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: seo_pages_seo_page_defaults: SELECT  "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults"   ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1):
+  sqlite3 (1.3.8) lib/sqlite3/database.rb:91:in `initialize'
+  sqlite3 (1.3.8) lib/sqlite3/database.rb:91:in `new'
+  sqlite3 (1.3.8) lib/sqlite3/database.rb:91:in `prepare'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:296:in `block in exec_query'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:425:in `block in log'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:420:in `log'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:292:in `exec_query'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:504:in `select'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/database_statements.rb:24:in `select_all'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `block in select_all'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/query_cache.rb:76:in `cache_sql'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `select_all'
+  activerecord (4.0.0) lib/active_record/querying.rb:36:in `find_by_sql'
+  activerecord (4.0.0) lib/active_record/relation.rb:585:in `exec_queries'
+  activerecord (4.0.0) lib/active_record/relation.rb:471:in `load'
+  activerecord (4.0.0) lib/active_record/relation.rb:220:in `to_a'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:325:in `find_first'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:90:in `first'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:129:in `first'
+  activerecord (4.0.0) lib/active_record/querying.rb:3:in `first'
+  /home/hassan/projects/rails/badrit/engines/seo_pages/app/controllers/seo_pages/seo_pages_controller.rb:9:in `index'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:393:in `_run__106931087__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__537900050__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.2ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSeoPagesSeoPageDefaults (20130927171428)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "seo_pages_seo_page_defaults" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_title" varchar(255), "meta_keywords" varchar(255), "meta_description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130927171428"]]
+  [1m[36m (142.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSeoPagesSeoPages (20130927171429)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "seo_pages_seo_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url_identifier" varchar(255), "page_title" varchar(255), "meta_keywords" varchar(255), "meta_description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130927171429"]]
+  [1m[36m (130.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDefaultRecord (20130927171430)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (49.8ms)[0m  [1mINSERT INTO "seo_pages_seo_page_defaults" ("created_at", "meta_description", "meta_keywords", "page_title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Sep 2013 17:14:38 UTC +00:00], ["meta_description", "Edit Page Meta Description Default"], ["meta_keywords", "Edit Page Meta Keywords Default"], ["page_title", "Edit Page Title Default"], ["updated_at", Fri, 27 Sep 2013 17:14:38 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130927171430"]]
+  [1m[36m (165.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-27 19:14:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SeoPages::SeoPagesController#index as HTML
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages"[0m
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/index.html.erb within layouts/seo_pages/application (3.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.5ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 179ms (Views: 151.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:14:46 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:14:46 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:14:46 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:14:46 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:14:46 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:14:46 +0200
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-27 19:15:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SeoPages::SeoPagesController#index as HTML
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages"[0m
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/index.html.erb within layouts/seo_pages/application (4.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 141ms (Views: 114.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:00 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:00 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:00 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:00 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:00 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:00 +0200
+
+
+Started GET "/seo_pages/seo_pages/new" for 127.0.0.1 at 2013-09-27 19:16:03 +0200
+Processing by SeoPages::SeoPagesController#new as HTML
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (66.5ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/new.html.erb within layouts/seo_pages/application (71.8ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.4ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/new' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:03 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:03 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:03 +0200
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:03 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:03 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:03 +0200
+
+
+Started POST "/seo_pages/seo_pages" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+Processing by SeoPages::SeoPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOKhi5KsKf9hA5VZDa3IeKrAp9Z8zCXOhrdXTsCf4C0=", "seo_page"=>{"url_identifier"=>"/hello", "page_title"=>"hello world", "meta_keywords"=>"hello world keywords", "meta_description"=>"hello world description"}, "commit"=>"Create Seo page"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSeoPages::SeoPage Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/hello' LIMIT 1[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "seo_pages_seo_pages" ("created_at", "meta_description", "meta_keywords", "page_title", "updated_at", "url_identifier") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 27 Sep 2013 17:16:19 UTC +00:00], ["meta_description", "hello world description"], ["meta_keywords", "hello world keywords"], ["page_title", "hello world"], ["updated_at", Fri, 27 Sep 2013 17:16:19 UTC +00:00], ["url_identifier", "/hello"]]
+  [1m[36m (138.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/seo_pages/seo_pages/1
+Completed 302 Found in 300ms (ActiveRecord: 141.9ms)
+
+
+Started GET "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+Processing by SeoPages::SeoPagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.5ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/show.html.erb within layouts/seo_pages/application (1.9ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:19 +0200
+
+
+Started GET "/seo_pages/seo_pages" for 127.0.0.1 at 2013-09-27 19:16:21 +0200
+Processing by SeoPages::SeoPagesController#index as HTML
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages"
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/index.html.erb within layouts/seo_pages/application (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:21 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:21 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:21 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:21 +0200
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:16:21 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:16:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20130927171851)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130927171851"]]
+  [1m[36m (152.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:19:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (5.6ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (7.7ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 62ms (Views: 36.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:18 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:18 +0200
+
+
+Started PATCH "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+Processing by SeoPages::SeoPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOKhi5KsKf9hA5VZDa3IeKrAp9Z8zCXOhrdXTsCf4C0=", "seo_page"=>{"url_identifier"=>"/products", "page_title"=>"hello world", "meta_keywords"=>"hello world keywords", "meta_description"=>"hello world description"}, "commit"=>"Update Seo page", "id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSeoPages::SeoPage Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "seo_pages_seo_pages" WHERE ("seo_pages_seo_pages"."url_identifier" = '/products' AND "seo_pages_seo_pages"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "seo_pages_seo_pages" SET "url_identifier" = ?, "updated_at" = ? WHERE "seo_pages_seo_pages"."id" = 1  [["url_identifier", "/products"], ["updated_at", Fri, 27 Sep 2013 17:19:22 UTC +00:00]]
+  [1m[36m (193.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/seo_pages/seo_pages/1
+Completed 302 Found in 207ms (ActiveRecord: 194.7ms)
+
+
+Started GET "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+Processing by SeoPages::SeoPagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/show.html.erb within layouts/seo_pages/application (1.2ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:22 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 19:19:28 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.4ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.3ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 85ms (Views: 81.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:28 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:28 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:28 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 19:19:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:19:28 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2013-09-27 19:20:15 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:20:15 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-09-27 19:20:15 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-09-27 19:20:15 +0200
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-09-27 19:20:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:20:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddIsRegexToSeoPages (20130927173338)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "seo_pages" ADD "is_regex" boolean[0m
+SQLite3::SQLException: no such table: seo_pages: ALTER TABLE "seo_pages" ADD "is_regex" boolean
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddIsRegexToSeoPages (20130927173450)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "seo_pages_seo_pages" ADD "is_regex" boolean[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130927173450"]]
+  [1m[36m (132.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/seo_pages" for 127.0.0.1 at 2013-09-27 19:35:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SeoPages::SeoPagesController#index as HTML
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages"[0m
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/index.html.erb within layouts/seo_pages/application (62.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 145ms (Views: 118.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:35:10 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:35:10 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:35:10 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:35:10 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:35:10 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:35:10 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:35:12 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (61.3ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (65.9ms)
+Completed 500 Internal Server Error in 70ms
+
+ActionView::Template::Error (undefined method `checkbox' for #<ActionView::Helpers::FormBuilder:0xb644c170>):
+    18:     <%= f.label :url_identifier %><br>
+    19:     <%= f.text_field :url_identifier %><br />
+    20:     <%= f.label :is_regex %><br>
+    21:     <%= f.checkbox :is_regex %><br />
+    22: 
+    23:   </div>
+    24: 
+  /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb:21:in `block in __home_hassan_projects_rails_badrit_engines_seo_pages_app_views_seo_pages_seo_pages__form_html_erb__398633340__618509778'
+  actionpack (4.0.0) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionpack (4.0.0) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionpack (4.0.0) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionpack (4.0.0) lib/action_view/helpers/form_helper.rb:435:in `form_for'
+  /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb:1:in `__home_hassan_projects_rails_badrit_engines_seo_pages_app_views_seo_pages_seo_pages__form_html_erb__398633340__618509778'
+  actionpack (4.0.0) lib/action_view/template.rb:143:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+  actionpack (4.0.0) lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/partial_renderer.rb:278:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionpack (4.0.0) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb:3:in `__home_hassan_projects_rails_badrit_engines_seo_pages_app_views_seo_pages_seo_pages_edit_html_erb__916503500__619531868'
+  actionpack (4.0.0) lib/action_view/template.rb:143:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:393:in `_run__310635102__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1015328899__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.2ms)
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:36:16 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (30.1ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (32.3ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 92ms (Views: 63.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:36:16 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:36:16 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:36:16 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:36:16 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:36:16 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:36:16 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:37:26 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (8.0ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (10.3ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.6ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:37:26 +0200
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:37:26 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:37:26 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:37:26 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:37:26 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:37:26 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:37:40 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (6.5ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (8.0ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:37:40 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:37:40 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:37:40 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:37:40 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:37:40 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:37:40 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:38:18 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (10.7ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (12.8ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:38:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:38:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:38:18 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:38:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:38:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:38:18 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:38:33 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (6.8ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (8.4ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.3ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:38:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:38:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:38:33 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:38:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:38:33 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:38:33 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:38:50 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (3.7ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (4.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2..4)):
+    19:     <%= f.text_field :url_identifier %>
+    20:     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    21:     <%= f.check_box :is_regex %>
+    22:     <%= label "Regular Expression" %>
+    23:   </div>
+    24: 
+    25:   <div class="field">
+  actionpack (4.0.0) lib/action_view/helpers/form_helper.rb:749:in `label'
+  /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb:22:in `block in __home_hassan_projects_rails_badrit_engines_seo_pages_app_views_seo_pages_seo_pages__form_html_erb__398633340__618554758'
+  actionpack (4.0.0) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionpack (4.0.0) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionpack (4.0.0) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionpack (4.0.0) lib/action_view/helpers/form_helper.rb:435:in `form_for'
+  /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb:1:in `__home_hassan_projects_rails_badrit_engines_seo_pages_app_views_seo_pages_seo_pages__form_html_erb__398633340__618554758'
+  actionpack (4.0.0) lib/action_view/template.rb:143:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+  actionpack (4.0.0) lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/partial_renderer.rb:278:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionpack (4.0.0) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb:3:in `__home_hassan_projects_rails_badrit_engines_seo_pages_app_views_seo_pages_seo_pages_edit_html_erb__916503500__619531868'
+  actionpack (4.0.0) lib/action_view/template.rb:143:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:393:in `_run__310635102__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1015328899__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hassan/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/hassan/.rvm/gems/ruby-2.0.0-p0@tdd_project/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:39:00 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (8.1ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (9.9ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.3ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:00 +0200
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:00 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:00 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:00 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:00 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:00 +0200
+
+
+Started PATCH "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+Processing by SeoPages::SeoPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOKhi5KsKf9hA5VZDa3IeKrAp9Z8zCXOhrdXTsCf4C0=", "seo_page"=>{"url_identifier"=>"/products", "is_regex"=>"1", "page_title"=>"hello world", "meta_keywords"=>"hello world keywords", "meta_description"=>"hello world description"}, "commit"=>"Update Seo page", "id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSeoPages::SeoPage Exists (0.2ms)[0m  SELECT 1 AS one FROM "seo_pages_seo_pages" WHERE ("seo_pages_seo_pages"."url_identifier" = '/products' AND "seo_pages_seo_pages"."id" != 1) LIMIT 1
+  [1m[36mSQL (5.3ms)[0m  [1mUPDATE "seo_pages_seo_pages" SET "is_regex" = ?, "updated_at" = ? WHERE "seo_pages_seo_pages"."id" = 1[0m  [["is_regex", true], ["updated_at", Fri, 27 Sep 2013 17:39:18 UTC +00:00]]
+  [1m[35m (152.9ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/seo_pages/seo_pages/1
+Completed 302 Found in 179ms (ActiveRecord: 158.8ms)
+
+
+Started GET "/seo_pages/seo_pages/1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+Processing by SeoPages::SeoPagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/show.html.erb within layouts/seo_pages/application (2.0ms)
+  [1m[35mSeoPages::SeoPageDefault Load (0.2ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.1ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:18 +0200
+
+
+Started GET "/seo_pages/seo_pages" for 127.0.0.1 at 2013-09-27 19:39:20 +0200
+Processing by SeoPages::SeoPagesController#index as HTML
+  [1m[35mSeoPages::SeoPageDefault Load (0.4ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages"[0m
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/index.html.erb within layouts/seo_pages/application (3.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:20 +0200
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:20 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:20 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:20 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:20 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:20 +0200
+
+
+Started GET "/seo_pages/seo_pages/1/edit" for 127.0.0.1 at 2013-09-27 19:39:22 +0200
+Processing by SeoPages::SeoPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSeoPages::SeoPage Load (0.2ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/_form.html.erb (5.5ms)
+  Rendered /home/hassan/projects/rails/badrit/engines/seo_pages/app/views/seo_pages/seo_pages/edit.html.erb within layouts/seo_pages/application (7.3ms)
+  [1m[36mSeoPages::SeoPageDefault Load (0.4ms)[0m  [1mSELECT "seo_pages_seo_page_defaults".* FROM "seo_pages_seo_page_defaults" ORDER BY "seo_pages_seo_page_defaults"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."url_identifier" = '/seo_pages/seo_pages/1/edit' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/seo_pages/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.css?body=1" for 127.0.0.1 at 2013-09-27 19:39:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_page_defaults.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:22 +0200
+
+
+Started GET "/assets/seo_pages/seo_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:22 +0200
+
+
+Started GET "/assets/seo_pages/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:39:22 +0200
+  [1m[36mSeoPages::SeoPage Load (0.4ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f'
+  [1m[36mSeoPages::SeoPage Load (0.5ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.4ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.5ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' AND "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.5ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' AND "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/productssss' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' AND "seo_pages_seo_pages"."url_identifier" = '/productssss' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' AND "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/productssss' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' AND "seo_pages_seo_pages"."url_identifier" = '/productssss' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' AND "seo_pages_seo_pages"."url_identifier" = 'prod' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.5ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.4ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.5ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.2ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.3ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.5ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1[0m
+  [1m[35mSeoPages::SeoPage Load (0.4ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m
+  [1m[35mSeoPages::SeoPage Load (0.5ms)[0m  SELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 'f' AND "seo_pages_seo_pages"."url_identifier" = '/products' ORDER BY "seo_pages_seo_pages"."id" ASC LIMIT 1
+  [1m[36mSeoPages::SeoPage Load (0.3ms)[0m  [1mSELECT "seo_pages_seo_pages".* FROM "seo_pages_seo_pages" WHERE "seo_pages_seo_pages"."is_regex" = 't'[0m

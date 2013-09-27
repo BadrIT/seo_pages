@@ -17,6 +17,9 @@
   <div class="field">
     <%= f.label :url_identifier %><br>
     <%= f.text_field :url_identifier %>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <%= f.check_box :is_regex %>
+    <%= f.label "Regular Expression?" %>
   </div>
 
   <div class="field">

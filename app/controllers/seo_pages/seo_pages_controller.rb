@@ -57,7 +57,7 @@ module SeoPages
 
       # Only allow a trusted parameter "white list" through.
       def seo_page_params
-        params.require(:seo_page).permit(:url_identifier, :page_title, :meta_keywords, :meta_description)
+        params.require(:seo_page).permit(:url_identifier, :is_regex, :page_title, :meta_keywords, :meta_description)
       end
   end
 end
