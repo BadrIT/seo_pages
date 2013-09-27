@@ -14,3 +14,8 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+
+*.rub-*
+*/tmp/*
+*/log/*
+*/db/*.sqlite3
