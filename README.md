@@ -72,3 +72,8 @@ In the view you want to add custom SEO.
 
 ```
 
+## Version 1.3.2
+Added regular expression matcher for url identifier.
+First Match will be selected.
+
+
