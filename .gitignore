@@ -17,3 +17,7 @@ pickle-email-*.html
 
 **.rub-*
 *.sqlite3
+
+.ruby-gemset
+.ruby-version
+/test/dummy/
