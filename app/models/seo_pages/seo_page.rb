@@ -7,7 +7,7 @@ module SeoPages
 
     @@regex = {}
 
-    def self.find_by_url_identifier(url)
+    def self.find_by_url(url)
       exact_match(url) || regex_match(url)
     end
 
